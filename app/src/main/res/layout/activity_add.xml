@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes App"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_23sdp"
+            android:textStyle="bold"/>
+
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add your notes"
+                android:textSize="@dimen/_25sdp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_9sdp"/>
+
+            <EditText
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundaquare"
+                android:layout_marginHorizontal="@dimen/_9sdp"
+                android:padding="@dimen/_9sdp"
+                android:hint="Enter your title"/>
+
+            <EditText
+                android:id="@+id/datadescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:background="@drawable/backgroundaquare"
+                android:layout_margin="@dimen/_9sdp"
+                android:padding="@dimen/_9sdp"
+                android:inputType="textMultiLine"
+                android:minEms="1"
+                android:gravity="top"
+                android:scrollbars="vertical"
+                android:hint="Enter your description"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:backgroundTint="@color/blue"
+                android:layout_margin="@dimen/_9sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
